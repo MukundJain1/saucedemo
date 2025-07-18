@@ -24,6 +24,7 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'Requests' }).click();
   await page.locator('#root').click();
   await page.goto('https://staging.zentium.ai/requests/shift/pending');
+  
   await page.locator('#root').click();
   await page.locator('#root').click();
   await page.locator('#root').click();
